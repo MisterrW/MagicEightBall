@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Magic Eight Ball</string>
+    <string name="cc_app_name">CodeClan Magic 8 Ball</string>
+    <string name="question">Ask me a question!</string>
+    <string name="shake">Shake the ball!</string>
+    <!--<string name="answer">Maybe!</string>-->
+</resources>
