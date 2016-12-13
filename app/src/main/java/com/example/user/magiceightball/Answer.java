@@ -8,7 +8,6 @@ import java.util.Random;
  */
 public class Answer implements Answerable {
     private ArrayList<String> answers;
-    private int notARealNumber;
 
 
     public Answer(ArrayList<String> answers){
@@ -46,7 +45,11 @@ public class Answer implements Answerable {
     private void setupAnswers() {
         String[] answersToAdd = {
                 "Yes!",
-                "That would be an ecumenical matter."
+                "That would be an ecumenical matter.",
+                "If you insist.",
+                "Of course not!",
+                "Rio."
+
         };
         for(String answer : answersToAdd) {
             answers.add(answer);
