@@ -15,11 +15,10 @@ public class EightBall extends AppCompatActivity {
     EditText questionEditText;
     TextView answerText;
     Button shakeButton;
-    Answer answer;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        answer = new Answer();
         Log.d("Eightball", "onCreate called");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
@@ -31,10 +30,12 @@ public class EightBall extends AppCompatActivity {
         shakeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Answer answer = new Answer();
                 Log.d("Eightball", "Shake button pressed");
                 String question = questionEditText.getText().toString();
                 Log.d("Eightball", "Question " + question);
-                answerText.setText(answer.getAnswer());
+                String randomAnswer = answer.getAnswer();
+                answerText.setText(randomAnswer);
             }
 
         });

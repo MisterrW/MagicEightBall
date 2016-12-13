@@ -48,7 +48,10 @@ public class Answer implements Answerable {
                 "That would be an ecumenical matter.",
                 "If you insist.",
                 "Of course not!",
-                "Rio."
+                "Rio.",
+                "Why would you ever do it that way?",
+                "You can't do that in Java.",
+                "Only if there's an 'r' in the month."
 
         };
         for(String answer : answersToAdd) {
